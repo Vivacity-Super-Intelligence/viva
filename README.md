@@ -8,6 +8,16 @@ for the exact STM32 NUCLEO-G491RE board.
 This is an initial engineering foundation, not production-ready robot firmware.
 No motors or external actuators are controlled. No license has been selected.
 
+Physical acceptance on 2026-10-25, source `src-f022ba759df586ee`:
+
+| Target | Official toolchain build | Physical acceptance |
+| --- | --- | --- |
+| ESP32-S3 / FreeRTOS | PASS | 18/18 shared checks, OSAL, serial journey and 60-second observation: PASS |
+| NUCLEO-G491RE / Zephyr | PASS | 18/18 shared checks, OSAL, serial journey and 60-second observation: PASS |
+
+Native and ASan/UBSan CTest suites pass. These are engineering observations;
+watchdog reset-on-starvation and long endurance are outside the recorded scope.
+
 ## What works
 
 - Portable lifecycle: BOOT → SELFTEST → READY → ACTIVE, explicit FAULT and checked recovery.

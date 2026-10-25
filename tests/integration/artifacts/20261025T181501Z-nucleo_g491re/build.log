@@ -1,0 +1,47 @@
+wsl: Failed to start the systemd user session for 'root'. See journalctl for more details.
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base (cached)).
+-- Application: /mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re
+-- CMake version: 3.28.3
+-- Cache files will be written to: /root/.cache/zephyr
+-- Zephyr version: 4.5.0-rc3 (/opt/viva-toolchains/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: nucleo_g491re, qualifiers: stm32g491xx
+-- Found host-tools: zephyr 1.0.1 (/root/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/root/zephyr-sdk-1.0.1)
+-- Found BOARD.dts: /opt/viva-toolchains/zephyrproject/zephyr/boards/st/nucleo_g491re/nucleo_g491re.dts
+-- Found devicetree overlay: /mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/app.overlay
+-- Generated zephyr.dts: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/zephyr.dts
+-- Generated pickled edt: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /opt/viva-toolchains/zephyrproject/zephyr/Kconfig
+Loaded configuration '/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/.config'
+No change to configuration in '/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/.config'
+No change to Kconfig header in '/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache: Found unsuitable version "4.9.1", but required is at least "4.12" (found /usr/bin/ccache)
+-- Found gen_kobject_list: /opt/viva-toolchains/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (213.8s)
+-- Generating done (8.5s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re
+-- west build: building application
+[1/139] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[2/15] Building C object CMakeFiles/app.dir/src/main.c.obj
+[3/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/core/src/viva_core.c.obj
+[4/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/core/src/viva_protocol.c.obj
+[5/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/tests/viva_selftest.c.obj
+[6/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/tests/viva_osal_selftest.c.obj
+[7/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/hal/src/viva_runtime.c.obj
+[8/15] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/osal/zephyr/viva_osal.c.obj
+[9/15] Building C object CMakeFiles/app.dir/src/viva_hal_stm32.c.obj
+[10/15] Linking C static library app/libapp.a
+[11/15] Linking C executable zephyr/zephyr_pre0.elf
+[12/15] Generating linker.cmd
+[13/15] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+[14/15] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+[15/15] Linking C executable zephyr/zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       25872 B       512 KB      4.93%
+             RAM:       11008 B       112 KB      9.60%
+           SRAM0:           0 B       112 KB      0.00%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/zephyr.elf for board: nucleo_g491re/stm32g491xx

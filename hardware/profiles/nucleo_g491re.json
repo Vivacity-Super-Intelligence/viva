@@ -21,7 +21,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "diagnostics",
@@ -31,7 +31,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "telemetry",
@@ -41,7 +41,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "configuration",
@@ -51,7 +51,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "protocol",
@@ -61,7 +61,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "watchdog",
@@ -71,7 +71,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     },
     {
       "name": "osal",
@@ -81,7 +81,7 @@
       "configured": true,
       "tested": true,
       "verified": true,
-      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+      "evidence": "tests/hardware/artifacts/20261025T182109Z-nucleo_g491re/result.json"
     }
   ]
 }

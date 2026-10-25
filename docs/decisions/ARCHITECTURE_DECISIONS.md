@@ -61,3 +61,11 @@ now uses a static 256-byte single-producer/single-consumer ring buffer filled by
 the UART IRQ; the controller task consumes it in bounded batches. Buffer overflow
 reports an IO fault and discards through the next newline before resynchronizing.
 ESP-IDF already provides a buffered UART driver. Failed test logs are retained.
+
+## ADR 010 — Initialize west from an exact local manifest checkout
+Accepted after the first GitHub Actions run. `west init --mr SHA` with shallow
+clone options passed the SHA to `git clone --branch`, which requires a named ref.
+Bootstrap and CI now initialize a dependency Git repository, fetch the exact
+upstream SHA at depth 1, check it out detached, and use `west init -l` on that
+manifest checkout. This tests the fresh-machine path while keeping the requested
+board and SDK pin unchanged. The failed run remains in the CI history.

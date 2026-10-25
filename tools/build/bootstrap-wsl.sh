@@ -18,12 +18,17 @@ esac
 case "${1:-all}" in
   stm32|all)
     export PATH="$toolroot/venv/bin:$PATH"
+    if [ ! -d "$toolroot/zephyrproject/zephyr/.git" ]; then
+      mkdir -p "$toolroot/zephyrproject/zephyr"
+      git -C "$toolroot/zephyrproject/zephyr" init
+      git -C "$toolroot/zephyrproject/zephyr" remote add origin https://github.com/zephyrproject-rtos/zephyr
+    fi
+    git -C "$toolroot/zephyrproject/zephyr" fetch --depth 1 origin "$zephyr_ref"
+    git -C "$toolroot/zephyrproject/zephyr" checkout --detach "$zephyr_ref"
     if [ ! -d "$toolroot/zephyrproject/.west" ]; then
-      west init --clone-opt=--depth=1 -m https://github.com/zephyrproject-rtos/zephyr --mr "$zephyr_ref" "$toolroot/zephyrproject"
+      west init -l "$toolroot/zephyrproject/zephyr"
     fi
     cd "$toolroot/zephyrproject"
-    git -C zephyr fetch --depth 1 origin "$zephyr_ref"
-    git -C zephyr checkout --detach "$zephyr_ref"
     west update -o=--depth=1 cmsis cmsis_6 hal_stm32
     pip install -r zephyr/scripts/requirements-base.txt
     west zephyr-export

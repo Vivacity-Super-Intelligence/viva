@@ -1,0 +1,22 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+  VIVA_SANITIZE="ON"
+
+-- Configuring done (0.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/sanitize
+ninja: no work to do.
+Test project /mnt/p/VIVACITY/viva-foundation/build/sanitize
+    Start 1: viva_core
+1/4 Test #1: viva_core ........................   Passed    0.12 sec
+    Start 2: viva_protocol
+2/4 Test #2: viva_protocol ....................   Passed    0.03 sec
+    Start 3: viva_profiles
+3/4 Test #3: viva_profiles ....................   Passed    0.70 sec
+    Start 4: viva_host_tests
+4/4 Test #4: viva_host_tests ..................   Passed    2.20 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   3.27 sec

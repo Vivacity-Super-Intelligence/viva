@@ -40,7 +40,12 @@ jobs:
       - name: Install pinned Zephyr and ARM SDK
         run: |
           pip install west==1.5.0
-          west init --clone-opt=--depth=1 -m https://github.com/zephyrproject-rtos/zephyr --mr bc5d59d1b6657cfeef30124b818c8fbd69da68ac "$RUNNER_TEMP/zephyrproject"
+          mkdir -p "$RUNNER_TEMP/zephyrproject/zephyr"
+          git -C "$RUNNER_TEMP/zephyrproject/zephyr" init
+          git -C "$RUNNER_TEMP/zephyrproject/zephyr" remote add origin https://github.com/zephyrproject-rtos/zephyr
+          git -C "$RUNNER_TEMP/zephyrproject/zephyr" fetch --depth 1 origin bc5d59d1b6657cfeef30124b818c8fbd69da68ac
+          git -C "$RUNNER_TEMP/zephyrproject/zephyr" checkout --detach FETCH_HEAD
+          west init -l "$RUNNER_TEMP/zephyrproject/zephyr"
           cd "$RUNNER_TEMP/zephyrproject"
           west update -o=--depth=1 cmsis cmsis_6 hal_stm32
           pip install -r zephyr/scripts/requirements-base.txt
