@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Vivacity-Super-Intelligence/viva/schemas/firmware-config.schema.json",
+  "title": "Viva firmware configuration v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "telemetry_period_ms", "watchdog_timeout_ms", "capabilities"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "telemetry_period_ms": {"type": "integer", "minimum": 100, "maximum": 5000},
+    "watchdog_timeout_ms": {"type": "integer", "minimum": 200, "maximum": 60000},
+    "capabilities": {"type": "integer", "minimum": 31, "maximum": 127}
+  }
+}

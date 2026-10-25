@@ -1,0 +1,38 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+  VIVA_SANITIZE="ON"
+
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Python3: /opt/viva-toolchains/venv/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (5.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/sanitize
+[1/10] Building C object CMakeFiles/viva_core.dir/firmware/tests/viva_selftest.c.o
+[2/10] Building C object CMakeFiles/viva_core.dir/firmware/core/src/viva_core.c.o
+[3/10] Building C object CMakeFiles/viva_core_tests.dir/firmware/core/tests/test_core.c.o
+[4/10] Building C object CMakeFiles/viva_core.dir/firmware/core/src/viva_protocol.c.o
+[5/10] Building C object CMakeFiles/viva_protocol_tests.dir/tests/unit/test_protocol.c.o
+[6/10] Building C object CMakeFiles/viva_host.dir/tests/integration/viva_host.c.o
+[7/10] Linking C static library libviva_core.a
+[8/10] Linking C executable viva_core_tests
+[9/10] Linking C executable viva_protocol_tests
+[10/10] Linking C executable viva_host
+Test project /mnt/p/VIVACITY/viva-foundation/build/sanitize
+    Start 1: viva_core
+1/4 Test #1: viva_core ........................   Passed    0.02 sec
+    Start 2: viva_protocol
+2/4 Test #2: viva_protocol ....................   Passed    0.02 sec
+    Start 3: viva_profiles
+3/4 Test #3: viva_profiles ....................   Passed    0.36 sec
+    Start 4: viva_host_tests
+4/4 Test #4: viva_host_tests ..................   Passed    0.68 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   1.12 sec

@@ -1,0 +1,59 @@
+Loading Zephyr default modules (Zephyr ba-- Application
+warning: The choice symbol NEWLIB_LIBC (defined at lib/libc/Kconfig:116) was selected (set =y), but
+PICOLIBC (defined at lib/libc/Kconfig:100) ended up as the choice selection. See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_NEWLIB_LIBC and/or look up NEWLIB_LIBC in
+the menuconfig/guiconfig interface. The Application Development Primer, Setting Configuration
+Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful too.
+
+CMake Error in /usr/share/cmake-3.28/Modules/Platform/Generic.cmake:
+  cmListFileCache: error can not open file.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake:66 (include)
+  /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/CMakeFiles/CMakeScratch/TryCompile-UKkmpq/CMakeLists.txt:3 (project)
+
+
+CMake Error in /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake:
+  cmListFileCache: error can not open file.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake:131 (include)
+  /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/CMakeFiles/CMakeScratch/TryCompile-UKkmpq/CMakeLists.txt:3 (project)
+
+
+CMake Error at /usr/share/cmake-3.28/Modules/CMakeCInformation.cmake:131 (include):
+  include could not load requested file:
+
+    /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+Call Stack (most recent call first):
+  /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/CMakeFiles/CMakeScratch/TryCompile-UKkmpq/CMakeLists.txt:3 (project)
+
+
+CMake Error in /usr/share/cmake-3.28/Modules/Internal/HeaderpadWorkaround.cmake:
+  cmListFileCache: error can not open file.
+Call Stack (most recent call first):
+  /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/CMakeFiles/CMakeScratch/TryCompile-UKkmpq/CMakeLists.txt:17 (include)
+
+
+CMake Error at /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/CMakeFiles/CMakeScratch/TryCompile-UKkmpq/CMakeLists.txt:17 (include):
+  include could not load requested file:
+
+    /usr/share/cmake-3.28/Modules/Internal/HeaderpadWorkaround.cmake
+
+
+CMake Error at /usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_comp-- Configuring incomplete, errors occurred!
+ld system.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)
+  /usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/extensions.cmake:3153 (check_c_compiler_flag)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/extensions.cmake:1725 (check_compiler_flag)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/extensions.cmake:3422 (zephyr_check_compiler_flag)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/compiler/gcc/compiler_flags.cmake:99 (check_set_compiler_property)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/target_toolchain_flags.cmake:42 (include)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/kernel.cmake:192 (include)
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:133 (include)
+  /opt/viva-toolchains/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:57 (include)
+  /opt/viva-toolchains/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:88 (include_boilerplate)
+  CMakeLists.txt:2 (find_package)
+
+
+FATAL ERROR: command exited with status -7: /usr/bin/cmake -DWEST_PYTHON=/opt/viva-toolchains/venv/bin/python3 -DWEST_TOPDIR=/opt/viva-toolchains/zephyrproject -DWEST_VERSION=1.5.0 -B/mnt/p/VIVACITY/viva-foundation/build/stm32g491re -GNinja '-DWEST_PYTHON_PROPERTIES="Python;3;12;3;64;;cpython-312-x86_64-linux-gnu.so;abi3;/usr/lib/python3.12;/opt/viva-toolchains/venv/lib/python3.12;/opt/viva-toolchains/venv/lib/python3.12/site-packages;/opt/viva-toolchains/venv/lib/python3.12/site-packages"' -DBOARD=nucleo_g491re -DVIVA_BUILD_ID=src-b7df1a38d22e4f87 -S/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re

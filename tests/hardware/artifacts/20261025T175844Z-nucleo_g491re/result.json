@@ -1,0 +1,31 @@
+{
+  "physical": true,
+  "status": "FAIL",
+  "timestamp_utc": "20261025T175844Z",
+  "platform": "nucleo_g491re",
+  "version": "0.1.0",
+  "build_id": "src-097009506809634d",
+  "binary_sha256": "129b7c79d0c75fabd1ede54bdce3555ab13fa7b4673d6e6dec34f555091d833c",
+  "port": "COM9",
+  "checks": {
+    "serial_device_present": true,
+    "stlink_selected": true,
+    "reset_success": true,
+    "boot_identity": true,
+    "boot_build": true,
+    "selftest": true,
+    "no_boot_failure": true
+  },
+  "passed_capabilities": [],
+  "observation_seconds": 60,
+  "usb_identity": {
+    "vid": 1155,
+    "pid": 14158,
+    "serial": "002500473331511734333834",
+    "description": "STMicroelectronics STLink Virtual COM Port (COM9)"
+  },
+  "error": "TimeoutError: No response to IDENTIFY",
+  "completed_utc": "2026-10-25T17:58:49.779763+00:00",
+  "log": "tests/hardware/artifacts/20261025T175844Z-nucleo_g491re/serial.log",
+  "log_sha256": "5a983d12be6dc7e29d7065f9ee7b762d9ff53d4d744bf2d6fe54945707c83f71"
+}

@@ -1,0 +1,10 @@
+*** Booting Zephyr OS build bc5d59d1b665 ***
+VIVA_BOOT product=Viva version=0.1.0 build=src-097009506809634d state=BOOT
+VIVA_STATE SELFTEST
+VIVA_SELFTEST passed=18 failed=0 osal=PASS watchdog=STARTED
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":1003}
+HOST_TX VIVA|1|1|IDENTIFY|
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":2009}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":3015}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":4021}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":5027}

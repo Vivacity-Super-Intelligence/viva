@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Vivacity-Super-Intelligence/viva/schemas/capability.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["name", "bit", "hardware_supported", "firmware_implemented", "configured", "tested", "verified", "evidence"],
+  "properties": {
+    "name": {"enum": ["core", "diagnostics", "telemetry", "configuration", "protocol", "watchdog", "osal"]},
+    "bit": {"enum": [1, 2, 4, 8, 16, 32, 64]},
+    "hardware_supported": {"type": "boolean"}, "firmware_implemented": {"type": "boolean"},
+    "configured": {"type": "boolean"}, "tested": {"type": "boolean"}, "verified": {"type": "boolean"},
+    "evidence": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"verified": {"const": true}}}, "then": {"properties": {"tested": {"const": true}, "firmware_implemented": {"const": true}, "configured": {"const": true}, "hardware_supported": {"const": true}, "evidence": {"type": "string", "minLength": 1}}}},
+    {"if": {"properties": {"configured": {"const": true}}}, "then": {"properties": {"firmware_implemented": {"const": true}, "hardware_supported": {"const": true}}}}
+  ]
+}

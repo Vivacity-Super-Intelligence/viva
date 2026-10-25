@@ -1,0 +1,7 @@
+{
+  "esp_idf": {"repository": "https://github.com/espressif/esp-idf", "ref": "v5.5.4", "target": "esp32s3"},
+  "zephyr": {"repository": "https://github.com/zephyrproject-rtos/zephyr", "ref": "bc5d59d1b6657cfeef30124b818c8fbd69da68ac", "version_metadata": "4.5.0-rc3", "board": "nucleo_g491re", "sdk": "1.0.1"},
+  "west": "1.5.0",
+  "windows_esptool": "5.6.0",
+  "windows_openocd": {"distribution": "xpack-dev-tools/openocd-xpack", "ref": "v0.12.0-7", "archive_sha256": "6bfd3c97135aafef8affc9af1acf34fd0e2b9ca26044506f6abd7f95b7630052"}
+}

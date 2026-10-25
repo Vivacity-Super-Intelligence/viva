@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-25T17:36:49.5911578Z",
+  "workspace": "P:\\VIVACITY\\viva-foundation",
+  "workspace_initially_empty": true,
+  "wsl_distribution": "Ubuntu-24.04",
+  "wsl_repository_path": "/mnt/p/VIVACITY/viva-foundation",
+  "windows_python": "Python 3.14.4",
+  "windows_git": "git version 2.54.0.windows.1",
+  "github_account": "Tanish-Anand1",
+  "github_org_role": "admin",
+  "license_selected": false,
+  "serial_devices": [
+    {
+      "DeviceID": "COM10",
+      "Name": "USB-Enhanced-SERIAL CH343 (COM10)",
+      "PNPDeviceID": "USB\\VID_1A86&PID_55D3\\5B5E114053"
+    },
+    {
+      "DeviceID": "COM9",
+      "Name": "STMicroelectronics STLink Virtual COM Port (COM9)",
+      "PNPDeviceID": "USB\\VID_0483&PID_374E&MI_02\\7&1C4B3442&0&0002"
+    }
+  ]
+}

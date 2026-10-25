@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "product": "Viva",
+  "platform": "nucleo_g491re",
+  "board": "STM32 NUCLEO-G491RE",
+  "rtos": "Zephyr",
+  "framework": "Zephyr bc5d59d1b6657cfeef30124b818c8fbd69da68ac",
+  "source": "https://docs.zephyrproject.org/latest/boards/st/nucleo_g491re/doc/index.html",
+  "config": {
+    "schema_version": 1,
+    "telemetry_period_ms": 1000,
+    "watchdog_timeout_ms": 10000,
+    "capabilities": 127
+  },
+  "capabilities": [
+    {
+      "name": "core",
+      "bit": 1,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "diagnostics",
+      "bit": 2,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "telemetry",
+      "bit": 4,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "configuration",
+      "bit": 8,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "protocol",
+      "bit": 16,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "watchdog",
+      "bit": 32,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    },
+    {
+      "name": "osal",
+      "bit": 64,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180300Z-nucleo_g491re/result.json"
+    }
+  ]
+}

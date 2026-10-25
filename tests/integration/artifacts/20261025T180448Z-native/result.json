@@ -1,0 +1,21 @@
+{
+  "target": "native",
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "root",
+    "--",
+    "bash",
+    "/mnt/p/VIVACITY/viva-foundation/tools/build/build-wsl.sh",
+    "native"
+  ],
+  "build_id": "src-0e64cfb7530d06c8",
+  "completed_utc": "2026-10-25T18:05:02.609313+00:00",
+  "duration_seconds": 14.5,
+  "source_unchanged": true,
+  "log": "tests/integration/artifacts/20261025T180448Z-native/build.log"
+}

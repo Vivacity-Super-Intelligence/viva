@@ -1,0 +1,60 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base (cached)).
+-- Application: /mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re
+-- CMake version: 3.28.3
+-- Cache files will be written to: /root/.cache/zephyr
+-- Zephyr version: 4.5.0-rc3 (/opt/viva-toolchains/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: nucleo_g491re, qualifiers: stm32g491xx
+-- Found host-tools: zephyr 1.0.1 (/root/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/root/zephyr-sdk-1.0.1)
+-- Found BOARD.dts: /opt/viva-toolchains/zephyrproject/zephyr/boards/st/nucleo_g491re/nucleo_g491re.dts
+-- Found devicetree overlay: /mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/app.overlay
+-- Generated zephyr.dts: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/zephyr.dts
+-- Generated pickled edt: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /opt/viva-toolchains/zephyrproject/zephyr/Kconfig
+Loaded configuration '/opt/viva-toolchains/zephyrproject/zephyr/boards/st/nucleo_g491re/nucleo_g491re_defconfig'
+Merged configuration '/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/prj.conf'
+Configuration saved to '/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/.config'
+Kconfig header saved to '/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated/zephyr/autoconf.h'
+-- Could NOT find Ccache: Found unsuitable version "4.9.1", but required is at least "4.12" (found /usr/bin/ccache)
+-- Found gen_kobject_list: /opt/viva-toolchains/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (18.9s)
+-- Generating done (6.4s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/stm32g491re
+-- west build: building application
+[1/166] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[2/162] Building C object zephyr/lib/heap/CMakeFiles/heap_constants.dir/heap_constants.c.obj
+[3/162] Generating ../../include/generated/zephyr/heap_constants.h
+[4/162] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[5/162] Generating include/generated/zephyr/offsets.h
+[6/162] Building C object CMakeFiles/app.dir/src/main.c.obj
+[7/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/tests/viva_selftest.c.obj
+[8/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/core/src/viva_core.c.obj
+[9/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/core/src/viva_protocol.c.obj
+[10/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[11/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[12/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/boot_banner.c.obj
+[13/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[14/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[15/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/tests/viva_osal_selftest.c.obj
+[16/162] Building C object CMakeFiles/app.dir/src/viva_hal_stm32.c.obj
+FAILED: CMakeFiles/app.dir/src/viva_hal_stm32.c.obj 
+/root/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCORE_CM4 -DHSE_VALUE=24000000 -DK_HEAP_MEM_POOL_SIZE=0 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -DSTM32G491xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DMA_MODULE=0 -DUSE_HAL_DRIVER -DVIVA_BUILD_ID=\"src-2f4ccd9d3ad46af6\" -DVIVA_OSAL_ZEPHYR=1 -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/../../../firmware/core/include -I/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/../../../firmware/hal/include -I/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/../../../firmware/osal/include -I/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/../../../firmware/tests -I/opt/viva-toolchains/zephyrproject/zephyr/include -I/mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated -I/opt/viva-toolchains/zephyrproject/zephyr/soc/st/stm32 -I/opt/viva-toolchains/zephyrproject/zephyr/lib/libc/picolibc/include -I/opt/viva-toolchains/zephyrproject/zephyr/soc/st/stm32/common/. -I/opt/viva-toolchains/zephyrproject/zephyr/drivers -I/opt/viva-toolchains/zephyrproject/zephyr/soc/st/stm32/stm32g4x/. -I/opt/viva-toolchains/zephyrproject/zephyr/subsys/portability/posix/c_lib_ext/getopt -I/opt/viva-toolchains/zephyrproject/zephyr/modules/cmsis_6/. -I/opt/viva-toolchains/zephyrproject/modules/hal/cmsis_6/CMSIS/Core/Include -I/opt/viva-toolchains/zephyrproject/modules/hal/stm32/stm32cube/stm32g4xx/soc -I/opt/viva-toolchains/zephyrproject/modules/hal/stm32/stm32cube/stm32g4xx/drivers/include -I/opt/viva-toolchains/zephyrproject/modules/hal/stm32/stm32cube/common_ll/include -isystem /opt/viva-toolchains/zephyrproject/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /mnt/p/VIVACITY/viva-foundation/build/stm32g491re/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfp16-format=ieee --sysroot=/root/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi -imacros /opt/viva-toolchains/zephyrproject/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re=CMAKE_SOURCE_DIR -fmacro-prefix-map=/opt/viva-toolchains/zephyrproject/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/opt/viva-toolchains/zephyrproject=WEST_TOPDIR -ffunction-sections -fdata-sections -mtp=soft -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/viva_hal_stm32.c.obj -MF CMakeFiles/app.dir/src/viva_hal_stm32.c.obj.d -o CMakeFiles/app.dir/src/viva_hal_stm32.c.obj -c /mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/src/viva_hal_stm32.c
+/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/src/viva_hal_stm32.c: In function 'receive_irq':
+/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re/src/viva_hal_stm32.c:12:9: error: invalid use of void expression
+   12 |     if (!uart_irq_update(dev)) { return; }
+      |         ^
+[17/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[18/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/hal/src/viva_runtime.c.obj
+[19/162] Building C object CMakeFiles/app.dir/mnt/p/VIVACITY/viva-foundation/firmware/osal/zephyr/viva_osal.c.obj
+/mnt/p/VIVACITY/viva-foundation/firmware/osal/zephyr/viva_osal.c: In function 'viva_os_critical_init':
+/mnt/p/VIVACITY/viva-foundation/firmware/osal/zephyr/viva_osal.c:19:80: warning: excess elements in struct initializer
+   19 | void viva_os_critical_init(viva_critical_t *s) { s->lock = (struct k_spinlock){0}; }
+      |                                                                                ^
+/mnt/p/VIVACITY/viva-foundation/firmware/osal/zephyr/viva_osal.c:19:80: note: (near initialization for '(anonymous)')
+[20/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[21/162] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/reboot.c.obj
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /usr/bin/cmake --build /mnt/p/VIVACITY/viva-foundation/build/stm32g491re

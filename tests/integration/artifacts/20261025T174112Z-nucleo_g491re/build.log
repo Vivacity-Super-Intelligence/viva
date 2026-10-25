@@ -1,0 +1,15 @@
+Loading Zephyr default modules (Zephyr ba-- ApNo board named 'nucleo_g491re' found. Did you mean:
+
+
+Run 'west boards' for the full list.
+CMake Error at /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/boards.cmake:221 (message):
+  Invalid BOARD; see above.
+Call Stack (most recent call first):
+  /opt/viva-toolchains/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+  /opt/viva-toolchains/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+  /opt/viva-toolchains/zephyrproject/zep-- Configuring incomplete, errors occurred!
+cmake:92 (include_boilerplate)
+  CMakeLists.txt:2 (find_package)
+
+
+FATAL ERROR: command exited with status 1: /usr/bin/cmake -DWEST_PYTHON=/opt/viva-toolchains/venv/bin/python3 -B/mnt/p/VIVACITY/viva-foundation/build/stm32g491re -GNinja -DBOARD=nucleo_g491re -DVIVA_BUILD_ID=src-29cd9ba917277a0a -S/mnt/p/VIVACITY/viva-foundation/firmware/platforms/stm32g491re

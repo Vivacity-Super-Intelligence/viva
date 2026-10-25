@@ -1,0 +1,28 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+  VIVA_SANITIZE="ON"
+
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/sanitize
+[1/7] Building C object CMakeFiles/viva_core_tests.dir/firmware/core/tests/test_core.c.o
+[2/7] Building C object CMakeFiles/viva_core.dir/firmware/core/src/viva_protocol.c.o
+[3/7] Building C object CMakeFiles/viva_protocol_tests.dir/tests/unit/test_protocol.c.o
+[4/7] Linking C static library libviva_core.a
+[5/7] Linking C executable viva_host
+[6/7] Linking C executable viva_core_tests
+[7/7] Linking C executable viva_protocol_tests
+Test project /mnt/p/VIVACITY/viva-foundation/build/sanitize
+    Start 1: viva_core
+1/4 Test #1: viva_core ........................   Passed    0.05 sec
+    Start 2: viva_protocol
+2/4 Test #2: viva_protocol ....................   Passed    0.01 sec
+    Start 3: viva_profiles
+3/4 Test #3: viva_profiles ....................   Passed    0.36 sec
+    Start 4: viva_host_tests
+4/4 Test #4: viva_host_tests ..................   Passed    0.68 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   1.16 sec

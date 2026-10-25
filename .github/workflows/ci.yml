@@ -1,0 +1,53 @@
+name: Viva validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - run: pip install -r requirements-dev.txt
+      - run: cmake --preset native && cmake --build --preset native && ctest --preset native
+      - run: cmake --preset sanitize && cmake --build --preset sanitize && ctest --preset sanitize
+      - run: python tools/validation/secret_scan.py
+      - name: Hardware tests require attached boards
+        run: echo 'Physical acceptance evidence is reviewed separately; no hardware tests run on this hosted runner.'
+  esp32s3:
+    runs-on: ubuntu-24.04
+    container: espressif/idf:v5.5.4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ESP32-S3 with official ESP-IDF
+        shell: bash
+        run: |
+          source /opt/esp/idf/export.sh
+          export VIVA_BUILD_ID=$(python tools/validation/source_identity.py)
+          idf.py -D VIVA_BUILD_ID="$VIVA_BUILD_ID" -C firmware/platforms/esp32s3 -B "$GITHUB_WORKSPACE/build/esp32s3" build
+  stm32g491re:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Zephyr host dependencies
+        run: sudo apt-get update && sudo apt-get install -y ninja-build gperf device-tree-compiler
+      - name: Install pinned Zephyr and ARM SDK
+        run: |
+          pip install west==1.5.0
+          west init --clone-opt=--depth=1 -m https://github.com/zephyrproject-rtos/zephyr --mr bc5d59d1b6657cfeef30124b818c8fbd69da68ac "$RUNNER_TEMP/zephyrproject"
+          cd "$RUNNER_TEMP/zephyrproject"
+          west update -o=--depth=1 cmsis cmsis_6 hal_stm32
+          pip install -r zephyr/scripts/requirements-base.txt
+          west zephyr-export
+          west sdk install --gnu-toolchains arm-zephyr-eabi
+      - name: Build exact board
+        run: |
+          export ZEPHYR_BASE="$RUNNER_TEMP/zephyrproject/zephyr"
+          export VIVA_BUILD_ID=$(python tools/validation/source_identity.py)
+          west build -b nucleo_g491re -d build/stm32g491re firmware/platforms/stm32g491re -- -DVIVA_BUILD_ID="$VIVA_BUILD_ID"

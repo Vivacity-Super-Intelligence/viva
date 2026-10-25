@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "product": "Viva",
+  "platform": "esp32s3",
+  "board": "ESP32-S3 development board; exact module variant not assumed",
+  "rtos": "FreeRTOS",
+  "framework": "ESP-IDF v5.5.4",
+  "source": "https://docs.espressif.com/projects/esp-idf/en/v5.5.4/esp32s3/index.html",
+  "config": {
+    "schema_version": 1,
+    "telemetry_period_ms": 1000,
+    "watchdog_timeout_ms": 10000,
+    "capabilities": 127
+  },
+  "capabilities": [
+    {
+      "name": "core",
+      "bit": 1,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "diagnostics",
+      "bit": 2,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "telemetry",
+      "bit": 4,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "configuration",
+      "bit": 8,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "protocol",
+      "bit": 16,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "watchdog",
+      "bit": 32,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    },
+    {
+      "name": "osal",
+      "bit": 64,
+      "hardware_supported": true,
+      "firmware_implemented": true,
+      "configured": true,
+      "tested": true,
+      "verified": true,
+      "evidence": "tests/hardware/artifacts/20261025T180923Z-esp32s3/result.json"
+    }
+  ]
+}

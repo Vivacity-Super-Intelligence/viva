@@ -1,0 +1,21 @@
+{
+  "target": "nucleo_g491re",
+  "status": "PASS",
+  "exit_code": 0,
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "root",
+    "--",
+    "bash",
+    "/mnt/p/VIVACITY/viva-foundation/tools/build/build-wsl.sh",
+    "stm32"
+  ],
+  "build_id": "src-097009506809634d",
+  "completed_utc": "2026-10-25T17:57:23.231436+00:00",
+  "duration_seconds": 292.79,
+  "source_unchanged": true,
+  "log": "tests/integration/artifacts/20261025T175230Z-nucleo_g491re/build.log"
+}

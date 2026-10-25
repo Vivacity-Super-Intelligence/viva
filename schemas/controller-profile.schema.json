@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Vivacity-Super-Intelligence/viva/schemas/controller-profile.schema.json",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "product", "platform", "board", "rtos", "framework", "source", "config", "capabilities"],
+  "properties": {
+    "schema_version": {"const": 1}, "product": {"const": "Viva"},
+    "platform": {"enum": ["esp32s3", "nucleo_g491re"]}, "board": {"type": "string", "minLength": 1},
+    "rtos": {"enum": ["FreeRTOS", "Zephyr"]}, "framework": {"type": "string", "minLength": 1},
+    "source": {"type": "string", "format": "uri"},
+    "config": {"$ref": "firmware-config.schema.json"},
+    "capabilities": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"$ref": "capability.schema.json"}}
+  }
+}

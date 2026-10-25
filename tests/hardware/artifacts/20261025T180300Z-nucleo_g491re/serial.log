@@ -1,0 +1,109 @@
+*** Booting Zephyr OS build bc5d59d1b665 ***
+VIVA_BOOT product=Viva version=0.1.0 build=src-0e64cfb7530d06c8 state=BOOT
+VIVA_STATE SELFTEST
+VIVA_SELFTEST passed=18 failed=0 osal=PASS watchdog=STARTED
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":1003}
+HOST_TX VIVA|1|1|IDENTIFY|
+VIVA|1|1|IDENTIFY|{"product":"Viva","platform":"nucleo_g491re"}
+HOST_TX VIVA|1|2|VERSION|
+VIVA|1|2|VERSION|{"version":"0.1.0","build":"src-0e64cfb7530d06c8","config_version":1,"protocol_version":1}
+HOST_TX VIVA|1|3|HEALTH|
+VIVA|1|3|HEALTH|{"state":"READY","health":"READY","uptime_ms":1054}
+HOST_TX VIVA|1|4|CAPABILITIES|
+VIVA|1|4|CAPABILITIES|{"implemented":127,"configured":127}
+HOST_TX VIVA|1|5|CONFIG|
+VIVA|1|5|CONFIG|{"schema_version":1,"telemetry_period_ms":1000,"watchdog_timeout_ms":10000,"capabilities":127}
+HOST_TX VIVA|1|6|CONFIG|99
+VIVA|1|6|ERROR|{"error":2}
+HOST_TX VIVA|1|7|CONFIG|
+VIVA|1|7|CONFIG|{"schema_version":1,"telemetry_period_ms":1000,"watchdog_timeout_ms":10000,"capabilities":127}
+HOST_TX VIVA|1|8|CONFIG|500
+VIVA|1|8|CONFIG|{"schema_version":1,"telemetry_period_ms":500,"watchdog_timeout_ms":10000,"capabilities":127}
+HOST_TX VIVA|1|9|CONFIG|1000
+VIVA|1|9|CONFIG|{"schema_version":1,"telemetry_period_ms":1000,"watchdog_timeout_ms":10000,"capabilities":127}
+HOST_TX VIVA|2|10|HEALTH|
+VIVA|1|10|ERROR|{"error":7}
+HOST_TX VIVA|1|11|UNKNOWN|
+VIVA|1|11|ERROR|{"error":12}
+HOST_TX VIVA|1|12|FAULT|10
+VIVA|1|12|FAULT|{"state":"FAULT","health":"FAULT","uptime_ms":1201}
+HOST_TX VIVA|1|13|HEALTH|
+VIVA|1|13|HEALTH|{"state":"FAULT","health":"FAULT","uptime_ms":1217}
+HOST_TX VIVA|1|14|START|
+VIVA|1|14|ERROR|{"error":3}
+HOST_TX VIVA|1|15|RECOVER|
+VIVA|1|15|RECOVER|{"state":"READY","health":"READY","uptime_ms":1246}
+HOST_TX VIVA|1|16|DIAGNOSTICS|
+VIVA|1|16|DIAGNOSTICS|{"faults":1,"recoveries":1,"invalid_requests":4,"last_fault":10}
+HOST_TX VIVA|1|17|START|
+VIVA|1|17|START|{"state":"ACTIVE","health":"OK","uptime_ms":1279}
+HOST_TX VIVA|1|18|CONFIG|500
+VIVA|1|18|ERROR|{"error":3}
+HOST_TX VIVA|1|19|FAULT|10
+VIVA|1|19|FAULT|{"state":"FAULT","health":"FAULT","uptime_ms":1307}
+HOST_TX VIVA|1|20|RECOVER|
+VIVA|1|20|RECOVER|{"state":"READY","health":"READY","uptime_ms":1323}
+HOST_TX VIVA|1|21|TELEMETRY|
+VIVA|1|21|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":1339}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":2012}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":3018}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":4024}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":5030}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":6036}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":7042}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":8048}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":9054}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":10059}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":11065}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":12071}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":13077}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":14083}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":15089}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":16095}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":17101}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":18107}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":19113}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":20119}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":21125}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":22131}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":23137}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":24143}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":25149}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":26155}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":27161}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":28167}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":29173}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":30179}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":31185}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":32191}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":33197}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":34203}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":35209}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":36215}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":37221}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":38227}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":39233}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":40239}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":41245}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":42251}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":43257}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":44263}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":45269}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":46275}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":47281}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":48287}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":49293}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":50299}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":51305}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":52311}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":53317}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":54323}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":55329}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":56335}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":57341}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":58347}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":59353}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":60359}
+VIVA|1|0|TELEMETRY|{"state":"READY","health":"READY","uptime_ms":61365}
+HOST_TX VIVA|1|22|HEALTH|
+VIVA|1|22|HEALTH|{"state":"READY","health":"READY","uptime_ms":61382}

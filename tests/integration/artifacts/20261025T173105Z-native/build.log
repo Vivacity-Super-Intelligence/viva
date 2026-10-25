@@ -1,0 +1,21 @@
+Preset CMake variables:
+
+  CMAKE_BUILD_TYPE="Debug"
+
+-- Configuring done (0.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /mnt/p/VIVACITY/viva-foundation/build/native
+ninja: no work to do.
+Test project /mnt/p/VIVACITY/viva-foundation/build/native
+    Start 1: viva_core
+1/4 Test #1: viva_core ........................   Passed    0.03 sec
+    Start 2: viva_protocol
+2/4 Test #2: viva_protocol ....................   Passed    0.05 sec
+    Start 3: viva_profiles
+3/4 Test #3: viva_profiles ....................   Passed    0.47 sec
+    Start 4: viva_host_tests
+4/4 Test #4: viva_host_tests ..................   Passed    0.89 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   1.52 sec
